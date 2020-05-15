@@ -1,3 +1,4 @@
 bin/
 consoleApp.csproj
 obj/
+.DS_Store
