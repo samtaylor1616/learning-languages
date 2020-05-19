@@ -13,22 +13,29 @@ To run the sample, type the following command:
 
 `python3 simple.py` in the Simple directory
 
-# Basic Logging
+--
+
+### Basic Logging
 
 - Logging is a means of tracking events that happen when some software runs
   - Add logging calls to code to indicate that certain events have occurred
   - An event is described by a descriptive message which can optionally contain variable data
 
-## Logging Functions:
+### Logging Functions:
 
-| Function                                                                      | Best use case                                                                                                                    |
-| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| print()                                                                       | Displaying console output for ordinary usage of a command line script or program                                                 |
-| logging.info() or logging.debug() for detailed output for diagnostic purposes | Report events that occur during normal operation of a program (e.g. status monitoring or fault investigation)                    |
-| warnings.warn()                                                               | Runtime event - In library code if the issue is avoidable and the client application should be modified to eliminate the warning |
-| logging.warning()                                                             | Runtime event - If there is nothing the client application can do about the situation, but the event should still be noted       |
-| Raise an exception                                                            | Report an error regarding a particular runtime event                                                                             |
-| logging.error(), logging.exception(), or logging.critical()                   | Report suppression of an error without raising an exception                                                                      |
+- print()
+  - Displaying console output for ordinary usage of a command line script or program
+- logging.info() or logging.debug()
+  - For detailed output for diagnostic purposes
+  - Report events that occur during normal operation of a program (e.g. status monitoring or fault investigation)
+- warnings.warn()
+  - Runtime event - In library code if the issue is avoidable and the client application should be modified to eliminate the warning
+- logging.warning()
+  - Runtime event - If there is nothing the client application can do about the situation, but the event should still be noted
+- Raise an exception
+  - Report an error regarding a particular runtime event
+- logging.error(), logging.exception(), or logging.critical()
+  - Report suppression of an error without raising an exception
 
 ### Levels:
 
